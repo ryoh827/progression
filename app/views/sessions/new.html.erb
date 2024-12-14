@@ -1,0 +1,8 @@
+<h1>仮ログイン機能</h1>
+<p>UserIDが無い場合は、新しいユーザーを作成する</p>
+
+<%= form_with url: login_path, method: :post do |form| %>
+  <%= form.label :id, "UserID" %>
+  <%= form.text_field :id %>
+  <%= form.submit "Login" %>
+<% end %>
